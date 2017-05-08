@@ -34,6 +34,8 @@ docker run -it --rm -p 6080:80 -p 5900:5900 -e VNC_PASSWORD=mypassword centminmo
 
 A prompt will ask password either in the browser or vnc viewer.
 
+<img src="https://raw.github.com/centminmod/docker-ubuntu-vnc-desktop/master/screenshots/lxde2.png?v1" width=700/>
+
 
 Troubleshooting
 ==================
