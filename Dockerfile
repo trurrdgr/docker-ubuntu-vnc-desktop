@@ -35,7 +35,7 @@ RUN apt-get update \
 
 
 # tini for subreap                                   
-ENV TINI_VERSION v0.9.0
+ENV TINI_VERSION v0.14.0
 ADD https://github.com/krallin/tini/releases/download/${TINI_VERSION}/tini /bin/tini
 RUN chmod +x /bin/tini
 
