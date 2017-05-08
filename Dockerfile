@@ -15,6 +15,8 @@ RUN apt-get update \
     && apt-get install -y --no-install-recommends --allow-unauthenticated \
         supervisor \
         default-jre \
+        bc nano wget mtr dnsutils screen iputils-ping traceroute \
+        testssl.sh bsdmainutils nghttp2 \
         openssh-server pwgen sudo vim-tiny \
         net-tools \
         lxde x11vnc xvfb \
