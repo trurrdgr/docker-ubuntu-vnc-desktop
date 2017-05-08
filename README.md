@@ -9,7 +9,7 @@ Quick Start
 Run the docker image and open port `6080`
 
 ```
-docker run -it --rm -p 6080:80 dorowu/ubuntu-desktop-lxde-vnc
+docker run -it --rm -p 6080:80 centminmod/ubuntu-desktop-lxde-vnc
 ```
 
 Browse http://127.0.0.1:6080/
