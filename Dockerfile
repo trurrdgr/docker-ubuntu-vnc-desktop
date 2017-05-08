@@ -1,5 +1,5 @@
 FROM ubuntu:16.04
-MAINTAINER Doro Wu <fcwu.tw@gmail.com>
+MAINTAINER George Liu <centminmod.com>
 
 ENV DEBIAN_FRONTEND noninteractive
 
@@ -14,6 +14,7 @@ RUN apt-get update \
     && apt-get update \
     && apt-get install -y --no-install-recommends --allow-unauthenticated \
         supervisor \
+        default-jre \
         openssh-server pwgen sudo vim-tiny \
         net-tools \
         lxde x11vnc xvfb \
