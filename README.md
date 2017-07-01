@@ -1,7 +1,7 @@
 docker-ubuntu-vnc-desktop
 =========================
 
-Docker image to provide HTML5 VNC interface to access Ubuntu 17.10 LXDE desktop environment.
+Docker image to provide HTML5 VNC interface to access Ubuntu 16.04 LXDE desktop environment.
 
 Quick Start
 -------------------------
