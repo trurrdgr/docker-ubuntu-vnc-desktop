@@ -3,7 +3,7 @@ MAINTAINER George Liu <centminmod.com>
 
 ENV DEBIAN_FRONTEND noninteractive
 
-RUN sed -i 's#http://archive.ubuntu.com/#http://tw.archive.ubuntu.com/#' /etc/apt/sources.list
+# RUN sed -i 's#http://archive.ubuntu.com/#http://tw.archive.ubuntu.com/#' /etc/apt/sources.list
 
 # built-in packages
 RUN apt-get update \
