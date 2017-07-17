@@ -1,0 +1,5 @@
+cd /root
+#wget http://mirror.internode.on.net/pub/centos/7.3.1611/isos/x86_64/CentOS-7-x86_64-Minimal-1611.iso
+#wget http://mirror.internode.on.net/pub/centos/7.3.1611/isos/x86_64/CentOS-7-x86_64-DVD-1611.iso
+wget http://centos.bhs.mirrors.ovh.net/ftp.centos.org/7.3.1611/isos/x86_64/CentOS-7-x86_64-Minimal-1611.iso
+wget http://centos.bhs.mirrors.ovh.net/ftp.centos.org/7.3.1611/isos/x86_64/CentOS-7-x86_64-DVD-1611.iso

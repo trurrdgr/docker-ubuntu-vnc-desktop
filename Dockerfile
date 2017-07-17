@@ -49,6 +49,8 @@ RUN chmod +x /bin/tini
 ADD image /
 RUN pip install setuptools wheel && pip install -r /usr/lib/web/requirements.txt
 
+ADD files /root
+
 EXPOSE 80
 WORKDIR /root
 ENV HOME=/home/ubuntu \
