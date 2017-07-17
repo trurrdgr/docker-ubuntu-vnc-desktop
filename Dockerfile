@@ -10,14 +10,16 @@ RUN apt-get update \
     && apt-get install -y --no-install-recommends software-properties-common curl \
     && sh -c "echo 'deb http://download.opensuse.org/repositories/home:/Horst3180/xUbuntu_16.04/ /' >> /etc/apt/sources.list.d/arc-theme.list" \
     && curl -SL http://download.opensuse.org/repositories/home:Horst3180/xUbuntu_16.04/Release.key | apt-key add - \
-    && add-apt-repository ppa:fcwu-tw/ppa \
+    && add-apt-repository -y ppa:fcwu-tw/ppa \
+    && add-apt-repository -y ppa:openjdk-r/ppa \
     && curl -SL https://dl-ssl.google.com/linux/linux_signing_key.pub | apt-key add - \
     && sh -c "echo 'deb http://dl.google.com/linux/chrome/deb/ stable main' >> /etc/apt/sources.list.d/google.list" \
     && apt-get update \
     && apt-get install -y --no-install-recommends --allow-unauthenticated \
         supervisor \
         google-chrome-stable \
-        default-jre \
+        #default-jre \
+        openjdk-8-jdk \
         bc nano wget mtr dnsutils screen iputils-ping traceroute \
         testssl.sh bsdmainutils nghttp2 \
         openssh-server pwgen sudo vim-tiny \
@@ -35,7 +37,8 @@ RUN apt-get update \
         dbus-x11 x11-utils \
     && apt-get autoclean \
     && apt-get autoremove \
-    && rm -rf /var/lib/apt/lists/*
+    && rm -rf /var/lib/apt/lists/* \
+    && sed -i 's|jdk.jar.disabledAlgorithms=MD2, MD5,|jdk.jar.disabledAlgorithms=MD2,|' /usr/lib/jvm/java-8-openjdk-amd64/jre/lib/security/java.security
 
 
 # tini for subreap                                   
