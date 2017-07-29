@@ -1,5 +1,4 @@
-docker-ubuntu-vnc-desktop
-=========================
+## docker-ubuntu-vnc-desktop
 
 Docker image to provide HTML5 VNC interface to access Ubuntu 16.04 LXDE desktop environment.
 
@@ -36,14 +35,38 @@ A prompt will ask password either in the browser or vnc viewer.
 
 <img src="https://raw.github.com/centminmod/docker-ubuntu-vnc-desktop/master/screenshots/lxde2.png?v1" width=700/>
 
+## Dell iDRAC 6 IPMI Java Console Usage
 
-Troubleshooting
-==================
+Go into IcedTea web panel and lower the `Extended applet security` level for java applets
+
+<img src="https://raw.github.com/centminmod/docker-ubuntu-vnc-desktop/master/screenshots/dell-idrac-console/docker-ubuntu-vnc-icedtea-web-panel-01.png?v1" width=700/>
+
+<img src="https://raw.github.com/centminmod/docker-ubuntu-vnc-desktop/master/screenshots/dell-idrac-console/docker-ubuntu-vnc-icedtea-web-panel-02.png?v1" width=700/>
+
+Launch Firefox browser and go to your IPMI web login and add a permenant exception for HTTPS based IPMI login
+
+<img src="https://raw.github.com/centminmod/docker-ubuntu-vnc-desktop/master/screenshots/dell-idrac-console/docker-ubuntu-vnc-firefox-ipmi-01.png?v1" width=700/>
+
+<img src="https://raw.github.com/centminmod/docker-ubuntu-vnc-desktop/master/screenshots/dell-idrac-console/docker-ubuntu-vnc-firefox-ipmi-02.png?v1" width=700/>
+
+Launch console and open with `IceTea Java Web Start` + check trust publisher and content.
+
+<img src="https://raw.github.com/centminmod/docker-ubuntu-vnc-desktop/master/screenshots/dell-idrac-console/docker-ubuntu-vnc-firefox-ipmi-03.png?v1" width=700/>
+
+<img src="https://raw.github.com/centminmod/docker-ubuntu-vnc-desktop/master/screenshots/dell-idrac-console/docker-ubuntu-vnc-firefox-ipmi-04.png?v1" width=700/>
+
+<img src="https://raw.github.com/centminmod/docker-ubuntu-vnc-desktop/master/screenshots/dell-idrac-console/docker-ubuntu-vnc-firefox-ipmi-05.png?v1" width=700/>
+
+Answer yes to run java console applet
+
+<img src="https://raw.github.com/centminmod/docker-ubuntu-vnc-desktop/master/screenshots/dell-idrac-console/docker-ubuntu-vnc-firefox-ipmi-06.png?v1" width=700/>
+
+## Troubleshooting
+
 
 1. boot2docker connection issue, https://github.com/fcwu/docker-ubuntu-vnc-desktop/issues/2
 
 
-License
-==================
+## License
 
 See the LICENSE file for details.
