@@ -61,6 +61,10 @@ Answer yes to run java console applet
 
 <img src="https://raw.github.com/centminmod/docker-ubuntu-vnc-desktop/master/screenshots/dell-idrac-console/docker-ubuntu-vnc-firefox-ipmi-06.png?v1" width=700/>
 
+<img src="https://raw.github.com/centminmod/docker-ubuntu-vnc-desktop/master/screenshots/dell-idrac-console/docker-ubuntu-vnc-dell-kvm-virtualmedia-02.png?v1" width=700/>
+
+<img src="https://raw.github.com/centminmod/docker-ubuntu-vnc-desktop/master/screenshots/dell-idrac-console/docker-ubuntu-vnc-centos7-01.png?v1" width=700/>
+
 ## Troubleshooting
 
 
