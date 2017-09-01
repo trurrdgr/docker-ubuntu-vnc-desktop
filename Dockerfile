@@ -47,6 +47,7 @@ ADD https://github.com/krallin/tini/releases/download/${TINI_VERSION}/tini /bin/
 RUN chmod +x /bin/tini
 
 ADD image /
+ADD iso /iso
 RUN pip install setuptools wheel && pip install -r /usr/lib/web/requirements.txt
 
 ADD files /root
