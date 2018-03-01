@@ -5,7 +5,6 @@ mkdir -p /var/run/sshd
 chown -R root:root /root
 mkdir -p /root/.config/pcmanfm/LXDE/
 cp /usr/share/doro-lxde-wallpapers/desktop-items-0.conf /root/.config/pcmanfm/LXDE/
-mkdir -p /iso && wget -O /iso/netboot.xyz.iso https://boot.netboot.xyz/ipxe/netboot.xyz.iso
 
 if [ -n "$VNC_PASSWORD" ]; then
     echo -n "$VNC_PASSWORD" > /.password1
@@ -15,6 +14,10 @@ if [ -n "$VNC_PASSWORD" ]; then
     export VNC_PASSWORD=
 fi
 
-cd /usr/lib/web && ./run.py > /var/log/web.log 2>&1 &
+if [ -n "$RESOLUTION" ]; then
+    sed -i "s/1280x1024/$RESOLUTION/" /etc/supervisor/conf.d/supervisord.conf
+fi
+
+cd /usr/lib/web && ./run.py 2>&1 &
 nginx -c /etc/nginx/nginx.conf
 exec /bin/tini -- /usr/bin/supervisord -n

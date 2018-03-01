@@ -65,10 +65,20 @@ Answer yes to run java console applet
 
 <img src="https://raw.github.com/centminmod/docker-ubuntu-vnc-desktop/master/screenshots/dell-idrac-console/docker-ubuntu-vnc-centos7-01.png?v1" width=700/>
 
+Screen Resolution
+------------------
+
+Resolution of virtual desktop adapts browser window size when first connecting the server. You may choose a fixed resolution by passing `RESOLUTION` environment variable, for example
+
+```
+docker run -it --rm -p 6080:80 -p 5900:5900 -e VNC_PASSWORD=mypassword -e RESOLUTION=1920x1080 centminmod/docker-ubuntu-vnc-desktop
+```
+
 ## Troubleshooting
 
 
 1. boot2docker connection issue, https://github.com/fcwu/docker-ubuntu-vnc-desktop/issues/2
+2. Screen resolution is fitted to browser's window size when first connecting to the desktop. If you would like to change resolution, you have to re-create the container
 
 
 ## License
