@@ -21,6 +21,7 @@ RUN apt-get update \
         ttf-ubuntu-font-family ttf-wqy-zenhei \
         openjdk-8-jdk bc nano wget mtr dnsutils screen iputils-ping traceroute \
         testssl.sh bsdmainutils nghttp2 \
+        icedtea-netx icedtea-plugin \
         openssh-server pwgen\
     && add-apt-repository -r ppa:fcwu-tw/apps \
     && apt-get autoclean \
