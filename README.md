@@ -8,7 +8,7 @@ Quick Start
 Run the docker container and access with port `6080`
 
 ```
-docker run -it --rm -p 6080:80 centminmod/docker-ubuntu-vnc-desktop
+docker run -p 6080:80 centminmod/docker-ubuntu-vnc-desktop
 ```
 
 Browse http://127.0.0.1:6080/
