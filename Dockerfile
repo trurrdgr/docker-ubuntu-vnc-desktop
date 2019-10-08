@@ -19,7 +19,7 @@ RUN apt-get update \
         gtk2-engines-murrine gnome-themes-standard gtk2-engines-pixbuf gtk2-engines-murrine arc-theme \
         firefox chromium-browser \
         ttf-ubuntu-font-family ttf-wqy-zenhei \
-        openjdk-8-jdk bc nano wget mtr dnsutils screen iputils-ping traceroute \
+        openjdk-8-jdk bc nano wget mtr dnsutils screen iputils-ping traceroute xz tar \
         testssl.sh bsdmainutils nghttp2 \
         icedtea-netx icedtea-plugin \
         openssh-server pwgen\
